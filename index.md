@@ -15,5 +15,5 @@ toc: true
 - Test2
 
 ## 📄 最新文章
-- [Test](nanosim-power.md)
+- [Test](Test.md)
 
