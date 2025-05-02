@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 
-toc: true
+title: HDLBits_CS450 part
+toc: false
 ---
 
 # 都為計算機架構電路設計 .
