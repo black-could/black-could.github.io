@@ -8,3 +8,14 @@ kramdown:
   toc_levels: 1..3
   auto_ids: true
 locale: zh-TW
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      stylesheet: /assets/css/style.css
