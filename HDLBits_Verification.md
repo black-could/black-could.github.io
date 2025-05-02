@@ -11,7 +11,7 @@ toc: true
 ###
 題目 : [Sim/circuit6](https://hdlbits.01xz.net/wiki/Sim/circuit6)
 
-練習目標 : 由題目波型圖可知能由case語法實現 .
+解說 : 由題目波型圖可知能由case語法實現 .
 
 解法 :
 ```verilog
@@ -38,7 +38,7 @@ endmodule
 ###
 題目 : [Sim/circuit10](https://hdlbits.01xz.net/wiki/Sim/circuit10)
 
-練習目標 : 根據波型畫出真值表即可知道輸入和輸出關係 .
+解說 : 根據波型畫出真值表即可知道輸入和輸出關係 .
 
 解法 :
 ```verilog
@@ -66,7 +66,7 @@ endmodule
 ###
 題目 : [Tb/tff](https://hdlbits.01xz.net/wiki/Tb/tff)
 
-練習目標 : 根據題目提供的TFF寫Testbenches，要包含reset和toggle至high .
+解說 : 根據題目提供的TFF寫Testbenches，要包含reset和toggle至high .
 
 解法 :
 ```verilog

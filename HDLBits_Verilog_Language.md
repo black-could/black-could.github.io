@@ -11,7 +11,7 @@ toc: true
 ###
 題目 : [Vector100r](https://hdlbits.01xz.net/wiki/Vector100r)
 
-練習目標 : 將input反轉並直接接到output . ex: output[99] = input[0] ..... output[0] = input[99]
+解說 : 將input反轉並直接接到output . ex: output[99] = input[0] ..... output[0] = input[99]
 
 解法 :
 ```verilog
@@ -34,7 +34,7 @@ endmodule
 ###
 題目 : [Adder100i](https://hdlbits.01xz.net/wiki/Adder100i)
 
-練習目標 : 使用100個全加器做出100bit漣波加法器
+解說 : 使用100個全加器做出100bit漣波加法器
 
 解法 :
 ```verilog
@@ -69,7 +69,7 @@ endmodule
 ###
 題目 : [Bcdadd100](https://hdlbits.01xz.net/wiki/Bcdadd100)
 
-練習目標 : 由題目提供的bcd_fadd組合出400bit BCD漣波加法器
+解說 : 由題目提供的bcd_fadd組合出400bit BCD漣波加法器
 
 解法 :
 ```verilog

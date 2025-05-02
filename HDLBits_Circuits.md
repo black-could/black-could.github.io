@@ -14,7 +14,7 @@ toc: true
 ###
 題目 : [Exams/review2015 count1k](https://hdlbits.01xz.net/wiki/Exams/review2015_count1k)
 
-練習目標 : 設計出由0計數至999的計數器，reset觸發與clock同步且會將此計數器歸零 .
+解說 : 設計出由0計數至999的計數器，reset觸發與clock同步且會將此計數器歸零 .
 
 解法 :
 ```verilog
@@ -42,7 +42,7 @@ endmodule
 ###
 題目 : [Exams/review2015 shiftcount](https://hdlbits.01xz.net/wiki/Exams/review2015_shiftcount)
 
-練習目標 : 當shift_ena為high時計數器數值由data移位進入設定，當count_ena為high時即開始下數至0 . 此題不考慮兩個enable訊號同時發生期況 .
+解說 : 當shift_ena為high時計數器數值由data移位進入設定，當count_ena為high時即開始下數至0 . 此題不考慮兩個enable訊號同時發生期況 .
 
 解法 :
 ```verilog
@@ -72,7 +72,7 @@ endmodule
 ###
 題目 : [Exams/review2015 fsmseq](https://hdlbits.01xz.net/wiki/Exams/review2015_fsmseq)
 
-練習目標 : 設計狀態機偵測"1101"資料輸入序列是否發生 . 
+解說 : 設計狀態機偵測"1101"資料輸入序列是否發生 . 
 
 解法 :
 ```verilog
@@ -124,7 +124,7 @@ endmodule
 ###
 題目 : [Exams/review2015 fsmshift](https://hdlbits.01xz.net/wiki/Exams/review2015_fsmshift)
 
-練習目標 : 按照題目波型圖設計狀態機 . 由波型可知會需要一個計數器計算shift_ena為high的時間，或是直接用狀態堆也可以 .
+解說 : 按照題目波型圖設計狀態機 . 由波型可知會需要一個計數器計算shift_ena為high的時間，或是直接用狀態堆也可以 .
 
 解法 :
 ```verilog
@@ -178,7 +178,8 @@ endmodule
 ###
 題目 : [Exams/review2015 fsm](https://hdlbits.01xz.net/wiki/Exams/review2015_fsm)
 
-練習目標 : 此題是前面4題的融合體 . 在偵測輸入資料串為"1101"後，移位輸入計數器值(shift_ena為high) . 之後計數器開始動作(期間counting為high)直到收到done_counting，done為high直到收到ack回到初始狀態 .
+解說 : 此題是前面4題的融合體 . 在偵測輸入資料串為"1101"後，移位輸入計數器值(shift_ena為high) . 
+       之後計數器開始動作(期間counting為high)直到收到done_counting，done為high直到收到ack回到初始狀態 .
 
 解法 :
 ```verilog
@@ -250,7 +251,7 @@ endmodule
 ###
 題目 : [Exams/review2015 fancytimer](https://hdlbits.01xz.net/wiki/Exams/review2015_fancytimer)
 
-練習目標 : 前一題的進階，差在計數器並非收到input訊號才停止而是下數至0才結束，且下數動作則是需要由0數至999才會觸發 .
+解說 : 前一題的進階，差在計數器並非收到input訊號才停止而是下數至0才結束，且下數動作則是需要由0數至999才會觸發 .
 
 解法 :
 ```verilog
@@ -349,7 +350,7 @@ endmodule
 ###
 題目 : [Exams/review2015 fsmonehot](https://hdlbits.01xz.net/wiki/Exams/review2015_fsmonehot)
 
-練習目標 : 根據題目提供的狀態圖設計狀態機，但是寫法必須是One-hot logic equation
+解說 : 根據題目提供的狀態圖設計狀態機，但是寫法必須是One-hot logic equation
 
 解法 :
 ```verilog
