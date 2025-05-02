@@ -1,7 +1,7 @@
 ---
 layout: default
 title: HDLBits_CS450 part
-toc: false
+toc: ture
 ---
 
 都為計算機架構電路設計 .
