@@ -1,6 +1,6 @@
 ---
 layout: default
-title: HDLBits CS450 part
+title: 
 toc: true
 ---
 
