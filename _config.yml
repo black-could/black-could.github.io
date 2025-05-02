@@ -1,0 +1,10 @@
+title: 簡嘉呈的技術筆記
+description: 數位IC設計、NanoSim功耗模擬、Python自動化工具等實作筆記。
+theme: minima
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  toc_levels: 1..3
+  auto_ids: true
+locale: zh-TW
