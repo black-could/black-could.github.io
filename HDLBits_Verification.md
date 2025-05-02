@@ -14,7 +14,7 @@ toc: true
 練習目標 : 由題目波型圖可知能由case語法實現 .
 
 解法 :
-<pre>```verilog
+```verilog
 module top_module (
     input [2:0] a,
     output reg [15:0] q ); 
@@ -33,7 +33,7 @@ module top_module (
     end
     
 endmodule
-```</pre>
+```
 
 ###
 題目 : [Sim/circuit10](https://hdlbits.01xz.net/wiki/Sim/circuit10)
@@ -41,7 +41,7 @@ endmodule
 練習目標 : 根據波型畫出真值表即可知道輸入和輸出關係 .
 
 解法 :
-<pre>```verilog
+```verilog
 module top_module (
     input clk,
     input a,
@@ -61,7 +61,7 @@ module top_module (
     end
     
 endmodule
-```</pre>
+```
 
 ###
 題目 : [Tb/tff](https://hdlbits.01xz.net/wiki/Tb/tff)

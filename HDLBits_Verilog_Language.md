@@ -14,8 +14,6 @@ toc: true
 練習目標 : 將input反轉並直接接到output . ex: output[99] = input[0] ..... output[0] = input[99]
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module( 
     input [99:0] in,
@@ -31,7 +29,7 @@ module top_module(
     endgenerate
 
 endmodule
-</details>
+```
 
 ###
 題目 : [Adder100i](https://hdlbits.01xz.net/wiki/Adder100i)
@@ -39,8 +37,6 @@ endmodule
 練習目標 : 使用100個全加器做出100bit漣波加法器
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module( 
     input [99:0] a, b,
@@ -68,7 +64,7 @@ module addr(
     assign {cout,sum} = a + b + cin;
     
 endmodule
-</details>
+```
 
 ###
 題目 : [Bcdadd100](https://hdlbits.01xz.net/wiki/Bcdadd100)
@@ -76,8 +72,6 @@ endmodule
 練習目標 : 由題目提供的bcd_fadd組合出400bit BCD漣波加法器
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module( 
     input [399:0] a, b,
@@ -97,4 +91,4 @@ module top_module(
     endgenerate
 
 endmodule
-</details>
+```

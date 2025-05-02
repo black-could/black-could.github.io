@@ -14,8 +14,6 @@ toc: true
 練習目標 : 當load為high時輸入計數器數值，當load為low時開始下數至0 . 計數器為0後tc為high .
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module(
 	input clk, 
@@ -37,7 +35,7 @@ module top_module(
     end
     
 endmodule
-</details>
+```
 
 ###
 題目 : [Cs450/counter 2bc](https://hdlbits.01xz.net/wiki/Cs450/counter_2bc)
@@ -45,8 +43,6 @@ endmodule
 練習目標 : 此題狀態圖為分支方向預測器動作，即是動態預測中的2-bit Saturating Counter .
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module(
     input clk,
@@ -91,7 +87,7 @@ module top_module(
     end
 
 endmodule
-</details>
+```
 
 ###
 題目 : [Cs450/history shift](https://hdlbits.01xz.net/wiki/Cs450/history_shift)
@@ -99,8 +95,6 @@ endmodule
 練習目標 : 此為歷史移位暫存器用來幫助增強分支預測精準度 . 會將最近N次分支結果位移至此暫存器，若預測錯誤會載入更新值 .
 
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module(
     input clk,
@@ -133,7 +127,7 @@ module top_module(
     end
     
 endmodule
-</details>
+```
 
 ###
 題目 : [Cs450/history shift](https://hdlbits.01xz.net/wiki/Cs450/gshare)
@@ -142,10 +136,8 @@ endmodule
           自行研究後發現是由上面兩題組合起來的完整功能 . 
           分支預測器的動作則是根據PC堆疊和train_hisotry做互斥或產生強預測Taken、弱預測Taken、強預測Not Taken、弱預測Not Taken結果 .
           歷史移位暫存器在預測成功後會將此次分支預測器結果輸入暫存，若預測錯誤則會載入train_history數值 .
-          
+
 解法 :
-<details>
-<summary>點擊展開程式碼</summary>
 ```verilog
 module top_module(
     input clk,
@@ -187,5 +179,5 @@ module top_module(
     assign predict_taken = PHT[predict_history ^ predict_pc][1];
 
 endmodule
-</details>
+```
 
