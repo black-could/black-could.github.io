@@ -69,7 +69,7 @@ endmodule
 練習目標 : 根據題目提供的TFF寫Testbenches，要包含reset和toggle至high .
 
 解法 :
-<pre>```verilog
+```verilog
 module top_module ();
     
     reg clk, reset, t;
@@ -105,6 +105,6 @@ module top_module ();
     end
     
 endmodule
-```</pre>
+```
 
 
