@@ -15,19 +15,30 @@ toc: true
 IC design flow      : spec. --> RTL --> simulation --> synthesis --> STA
 
 compiler       tool : lcarus verilog (iverilog)
+
 simulation     tool : vvp
+
 synthesis      tool : Yosys
+
 STA            tool : OpenSTA
+
 waveform check tool : gtkwave
+
 library             : sky130_fd_sc_hd__tt_025C_1v80.lib (sky130 , open source pdk)
 
 ## \[Specification\]
 Data Width         : 8 bit 
+
 Start Bit          : 1 bit (low)
+
 Stop Bit           : 1 bit (high)
+
 Parity             : NA
+
 Transmission Order : LSB first
+
 Baud Rate          : 115200 or 9600 
+
 Main clk           : 50M Hz
 
 ## \[Interface\]
