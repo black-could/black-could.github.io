@@ -11,6 +11,7 @@ toc: true
 
 {:toc}
 ###
+## \[Info.\]
 IC design flow      : spec. --> RTL --> simulation --> synthesis --> STA
 
 compiler       tool : lcarus verilog (iverilog)
@@ -20,8 +21,7 @@ STA            tool : OpenSTA
 waveform check tool : gtkwave
 library             : sky130_fd_sc_hd__tt_025C_1v80.lib (sky130 , open source pdk)
 
-###
-\[Specification\]
+## \[Specification\]
 Data Width         : 8 bit 
 Start Bit          : 1 bit (low)
 Stop Bit           : 1 bit (high)
@@ -30,7 +30,7 @@ Transmission Order : LSB first
 Baud Rate          : 115200 or 9600 
 Main clk           : 50M Hz
 
-\[Interface\]
+## \[Interface\]
 | Singnal Name   | Direction | Width  | Note                                                         |
 |----------------|-----------|--------|--------------------------------------------------------------|
 | clk            | input     | 1 bit  | NA                                                           |
@@ -42,16 +42,16 @@ Main clk           : 50M Hz
 | tx_busy        | output    | 1 bit  | NA                                                           |
 | tx_data_output | output    | 1 bit  | NA                                                           |
 
-\[Action\]
+## \[Action\]
 Set Baud Rate --> Set tx_data_input --> Set tx_start high --> Wait tx_busy low --> return to set tx_data_input
 
 If want to change , please check tx_busy was low and tx_ready was high .
 
-\[Architecture_Blocks\]
+## \[Architecture_Blocks\]
 ![uart_block](/images/uart_blocks.png)
 
 
-\[Pattern_List\]
+## \[Pattern_List\]
 | Define Name | Pattern Name       | Baud Rate | Test Data               |
 |-------------|--------------------|-----------|-------------------------|
 | PATTERN01   | pattern01.v        | 9600      | 8'hFF -> 8'h00 -> 8'hFF |
@@ -60,11 +60,10 @@ If want to change , please check tx_busy was low and tx_ready was high .
 | PATTERN04   | pattern04.v        | 115200    | 8'h55 -> 8'hAA -> 8'h55 |
 | NA          | default_pattern.v  | 9600      | 8'h58                   |
 
-\[Environment_Architecture\]
+## \[Environment_Architecture\]
 ![uart_tree](/images/uart_tree.png)
 
-###
-\[RTL code\]
+## \[RTL code\]
 Testbench :
 ```verilog
 `timescale 1ns/10ps
@@ -411,8 +410,7 @@ module uart_monitor ();
 endmodule
 ```
 
-###
-\[Simulation Waveform\]
+## \[Simulation Waveform\]
 Name      : PATTERN01 
 Baud Rate : 9600 
 Test Data : 8'hFF -> 8'h00 -> 8'hFF
@@ -423,12 +421,10 @@ Baud Rate : 115200
 Test Data : 8'h55 -> 8'hAA -> 8'h55
 ![PAT4_waveform](/images/PAT4.png)
 
-###
-\[Yosys synthesis report\]
+## \[Yosys synthesis report\]
 ![yosys_syn_report](/images/Yosys_report.png)
 
-###
-\[OpenSTA timming report\]
+## \[OpenSTA timming report\]
 ![OpenSTA_timming_report1](/images/timming_report1.png)
 ![OpenSTA_timming_report2](/images/timming_report2.png)
 ![OpenSTA_timming_report3](/images/timming_report3.png)
