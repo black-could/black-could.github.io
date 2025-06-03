@@ -31,6 +31,7 @@ Baud Rate          : 115200 or 9600
 Main clk           : 50M Hz
 
 ## \[Interface\]
+
 | Singnal Name   | Direction | Width  | Note                                                         |
 |----------------|-----------|--------|--------------------------------------------------------------|
 | clk            | input     | 1 bit  | NA                                                           |
@@ -52,6 +53,7 @@ If want to change , please check tx_busy was low and tx_ready was high .
 
 
 ## \[Pattern_List\]
+
 | Define Name | Pattern Name       | Baud Rate | Test Data               |
 |-------------|--------------------|-----------|-------------------------|
 | PATTERN01   | pattern01.v        | 9600      | 8'hFF -> 8'h00 -> 8'hFF |
