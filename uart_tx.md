@@ -31,40 +31,37 @@ Baud Rate          : 115200 or 9600
 Main clk           : 50M Hz
 
 \[Interface\]
-| Singnal Name | Direction | Width | Note |
-| :----------: | :-------: | :---: | :--- |
-| clk | input | 1 bit | NA |
-| reset_n | input | 1 bit | NA |
-| tx_start | input | 1 bit | NA |
-| tx_data_input | input | 8 bit | NA |
-| baud_div | input | 16 bit | enter 5208 baud rate is 9600 , enter 434 baud rate is 115200 |
-| tx_ready | output | 1 bit | NA |
-| tx_busy | output | 1 bit | NA |
-| tx_data_output | output | 1 bit | NA |
+| Singnal Name   | Direction | Width  | Note                                                         |
+| :----------:   | :-------: | :---:  | :---                                                         |
+| clk            | input     | 1 bit  | NA                                                           |
+| reset_n        | input     | 1 bit  | NA                                                           |
+| tx_start       | input     | 1 bit  | NA                                                           |
+| tx_data_input  | input     | 8 bit  | NA                                                           |
+| baud_div       | input     | 16 bit | enter 5208 baud rate is 9600 , enter 434 baud rate is 115200 |
+| tx_ready       | output    | 1 bit  | NA                                                           |
+| tx_busy        | output    | 1 bit  | NA                                                           |
+| tx_data_output | output    | 1 bit  | NA                                                           |
 
 \[Action\]
-Set Baud Rate --> Set tx_data_input --> Set tx_start high --> Wait tx_busy low --
-                         ^                                                       |
-                         |                                                       |
-                          -------------------------------------------------------
+Set Baud Rate --> Set tx_data_input --> Set tx_start high --> Wait tx_busy low --> return to set tx_data_input
 
 If want to change , please check tx_busy was low and tx_ready was high .
 
 \[Architecture_Blocks\]
-![uart_block](https://github.com/black-could/black-could.github.io/blob/main/images/uart_blocks.png)
+![uart_block](/images/uart_blocks.png)
 
 
 \[Pattern_List\]
-| Define Name | Pattern Name | Baud Rate | Test Data |
-| :---------: | :----------: | :-------: | :-------: |
-| PATTERN01   | pattern01.v  | 9600 | 8'hFF -> 8'h00 -> 8'hFF |
-| PATTERN02   | pattern02.v  | 9600 | 8'h55 -> 8'hAA -> 8'h55 |
-| PATTERN03   | pattern03.v  | 115200 | 8'hFF -> 8'h00 -> 8'hFF |
-| PATTERN04   | pattern04.v  | 115200 | 8'h55 -> 8'hAA -> 8'h55 |
-| NA   | default_pattern.v  | 9600 | 8'h58 |
+| Define Name | Pattern Name       | Baud Rate | Test Data               |
+| :---------: | :----------:       | :-------: | :-------:               |
+| PATTERN01   | pattern01.v        | 9600      | 8'hFF -> 8'h00 -> 8'hFF |
+| PATTERN02   | pattern02.v        | 9600      | 8'h55 -> 8'hAA -> 8'h55 |
+| PATTERN03   | pattern03.v        | 115200    | 8'hFF -> 8'h00 -> 8'hFF |
+| PATTERN04   | pattern04.v        | 115200    | 8'h55 -> 8'hAA -> 8'h55 |
+| NA          | default_pattern.v  | 9600      | 8'h58                   |
 
 \[Environment_Architecture\]
-![uart_tree](https://github.com/black-could/black-could.github.io/blob/main/images/uart_tree.png)
+![uart_tree](/images/uart_tree.png)
 
 ###
 \[RTL code\]
@@ -419,19 +416,19 @@ endmodule
 Name      : PATTERN01 
 Baud Rate : 9600 
 Test Data : 8'hFF -> 8'h00 -> 8'hFF
-![PAT1_waveform](https://github.com/black-could/black-could.github.io/blob/main/images/PAT1.png)
+![PAT1_waveform](/images/PAT1.png)
 
 Name      : PATTERN04 
 Baud Rate : 115200 
 Test Data : 8'h55 -> 8'hAA -> 8'h55
-![PAT4_waveform](https://github.com/black-could/black-could.github.io/blob/main/images/PAT4.png)
+![PAT4_waveform](/images/PAT4.png)
 
 ###
 \[Yosys synthesis report\]
-![yosys_syn_report](https://github.com/black-could/black-could.github.io/blob/main/images/Yosys_report.png)
+![yosys_syn_report](/images/Yosys_report.png)
 
 ###
 \[OpenSTA timming report\]
-![OpenSTA_timming_report1](https://github.com/black-could/black-could.github.io/blob/main/images/timming_report1.png)
-![OpenSTA_timming_report2](https://github.com/black-could/black-could.github.io/blob/main/images/timming_report2.png)
-![OpenSTA_timming_report3](https://github.com/black-could/black-could.github.io/blob/main/images/timming_report3.png)
+![OpenSTA_timming_report1](/images/timming_report1.png)
+![OpenSTA_timming_report2](/images/timming_report2.png)
+![OpenSTA_timming_report3](/images/timming_report3.png)
