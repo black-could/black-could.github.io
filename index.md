@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 目錄
+title: black-cloud的技術筆記
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ## 🔧 技術主題
 - [HDLBits](HDLBits_index.md)
+- [Small project](small_project_index.md)
 
 
 ## 📄 最新文章
