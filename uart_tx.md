@@ -46,7 +46,7 @@ Main clk           : 50M Hz
 ## \[Action\]
 Set Baud Rate --> Set tx_data_input --> Set tx_start high --> Wait tx_busy low --> return to set tx_data_input
 
-If want to change , please check tx_busy was low and tx_ready was high .
+If want to change Baud Rate , please check tx_busy was low and tx_ready was high .
 
 ## \[Architecture_Blocks\]
 ![uart_block](/images/uart_blocks.png)
