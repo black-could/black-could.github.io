@@ -32,7 +32,7 @@ Main clk           : 50M Hz
 
 \[Interface\]
 | Singnal Name   | Direction | Width  | Note                                                         |
-| :----------:   | :-------: | :---:  | :---                                                         |
+|:--------------:|:---------:|:------:|:-------------------------------------------------------------|
 | clk            | input     | 1 bit  | NA                                                           |
 | reset_n        | input     | 1 bit  | NA                                                           |
 | tx_start       | input     | 1 bit  | NA                                                           |
@@ -53,7 +53,7 @@ If want to change , please check tx_busy was low and tx_ready was high .
 
 \[Pattern_List\]
 | Define Name | Pattern Name       | Baud Rate | Test Data               |
-| :---------: | :----------:       | :-------: | :-------:               |
+|:-----------:|:------------------:|:---------:|:-----------------------:|
 | PATTERN01   | pattern01.v        | 9600      | 8'hFF -> 8'h00 -> 8'hFF |
 | PATTERN02   | pattern02.v        | 9600      | 8'h55 -> 8'hAA -> 8'h55 |
 | PATTERN03   | pattern03.v        | 115200    | 8'hFF -> 8'h00 -> 8'hFF |
