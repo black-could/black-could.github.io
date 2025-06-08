@@ -60,7 +60,7 @@ Set Baud Rate --> Set tx_data_input --> Set tx_start high --> Wait tx_busy low -
 If want to change Baud Rate , please check tx_busy was low and tx_ready was high .
 
 ## \[Architecture_Blocks\]
-![uart_block](/images/uart_blocks.png)
+![uart_block](/images/uart/uart_blocks.png)
 
 
 ## \[Pattern_List\]
@@ -74,7 +74,7 @@ If want to change Baud Rate , please check tx_busy was low and tx_ready was high
 | NA          | default_pattern.v  | 9600      | 8'h58                   |
 
 ## \[Environment_Architecture\]
-![uart_tree](/images/uart_tree.png)
+![uart_tree](/images/uart/uart_tree.png)
 
 ## \[RTL code\]
 Testbench :
@@ -427,17 +427,17 @@ endmodule
 Name      : PATTERN01 
 Baud Rate : 9600 
 Test Data : 8'hFF -> 8'h00 -> 8'hFF
-![PAT1_waveform](/images/PAT1.png)
+![PAT1_waveform](/images/uart/PAT1.png)
 
 Name      : PATTERN04 
 Baud Rate : 115200 
 Test Data : 8'h55 -> 8'hAA -> 8'h55
-![PAT4_waveform](/images/PAT4.png)
+![PAT4_waveform](/images/uart/PAT4.png)
 
 ## \[Yosys synthesis report\]
-![yosys_syn_report](/images/Yosys_report.png)
+![yosys_syn_report](/images/uart/Yosys_report.png)
 
 ## \[OpenSTA timming report\]
-![OpenSTA_timming_report1](/images/timming_report1.png)
-![OpenSTA_timming_report2](/images/timming_report2.png)
-![OpenSTA_timming_report3](/images/timming_report3.png)
+![OpenSTA_timming_report1](/images/uart/timming_report1.png)
+![OpenSTA_timming_report2](/images/uart/timming_report2.png)
+![OpenSTA_timming_report3](/images/uart/timming_report3.png)
