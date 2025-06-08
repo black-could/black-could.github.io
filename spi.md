@@ -626,13 +626,19 @@ endmodule
 
 ## \[Simulation Waveform\]
 Name      : PATTERN01 
+
 Master Test Data : 8'hAA -> 8'h55 -> 8'h00 -> 8'hFF
+
 Slave  Test Data : 8'h55 -> 8'hAA -> 8'hFF -> 8'h00
+
 ![PAT01_waveform](/images/spi/PAT01.png)
 
 Name      : PATTERN02
+
 Master Test Data : 8'h77
+
 Slave  Test Data : 8'h66
+
 ![PAT02_waveform](/images/spi/PAT02.png)
 
 ## \[Yosys synthesis report\]
