@@ -3,7 +3,7 @@
 title: UART TX
 toc: true
 ---
-
+## \[Preface\]
 #### 此專案目的在於自行走過設計規格至STA流程 .
 #### 因為是第一個小專案，所以花了不少時間在建立環境上 .
 #### 在此紀錄RTL code , testbench , monitor , simulation waveform , yosys synthesis report , openSTA timming report .
