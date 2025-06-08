@@ -645,6 +645,11 @@ Slave  Test Data : 8'h66
 ![yosys_syn_report](/images/spi/yosys_report.png)
 
 ## \[OpenSTA timming report\]
+
+timming report中有skew 3.0 ns發生 , 檢查後發現_277_和_310_是不同clk .
+
+雖然在.sdc有set_false_path但是這似乎沒影響report_clock_latency去檢查它 , 故無視 .
+
 ![OpenSTA_timming_report_01](/images/spi/timming_report_01.png)
 ![OpenSTA_timming_report_02](/images/spi/timming_report_02.png)
 ![OpenSTA_timming_report_03](/images/spi/timming_report_03.png)
