@@ -56,10 +56,11 @@ SPI Master
 
 ## \[Action\]
 when write : set w_en_i high (1 clk), set r_en_i low (1 clk), d_i input your data
+
 when read  : set w_en_i low  (1 clk), set r_en_i low (1 clk), d_o output data
 
 ## \[Architecture_Blocks\]
-![syn_fifo_block](/images/syn_fifo/syn_fifo_blocks.png)
+![syn_fifo_block](/images/syn_fifo/syn_fifo_block.png)
 
 
 ## \[Pattern_List\]
