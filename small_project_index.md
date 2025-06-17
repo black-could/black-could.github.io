@@ -12,3 +12,4 @@ toc: true
 - [UART-TX](uart_tx.md)
 - [SPI](spi.md)
 - [SYN FIFO](syn_fifo.md)
+- [ASYN FIFO](asyn_fifo.md)
