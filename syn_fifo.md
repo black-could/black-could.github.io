@@ -39,7 +39,6 @@ Almost full/empty  : 1
 Main clk           : 50M Hz
 
 ## \[Interface\]
-SPI Master
 
 | Singnal Name       | Direction | Width  | Note                                                         |
 |--------------------|-----------|--------|--------------------------------------------------------------|

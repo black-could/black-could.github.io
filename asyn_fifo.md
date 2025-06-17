@@ -37,7 +37,6 @@ Write clk          : basis pattern
 Read clk           : basis pattern
 
 ## \[Interface\]
-SPI Master
 
 | Singnal Name       | Direction | Width  | Note                                                         |
 |--------------------|-----------|--------|--------------------------------------------------------------|
